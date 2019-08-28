@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Calculator App</title>
+        <style>
+            h1{
+                color: blue
+            }
+            h3 span{
+                color: red;
+            }
+            /*Add your code below this line */
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1>Simple calculator app</h1>
+            <!-- Edit the code below -->
+            <form method="POST">
+                <!-- You have to specify what method your form uses -->
+                <input type="text" placeholder="Enter the first number" name="first">
+                <input type="text" placeholder="Enter the second number" name="second"><br>
+                <!-- You have to give your text inputs name properties to remember the values they hold -->
+                <input type = "submit" value="Add" name="add_button"/>
+                <input type = "submit" value="Subtract" name="subtract_button" /><br>
+                <input type = "submit" value="Divide" name="divide_button" />
+                <input type = "submit" value="Multiply" name="mul_button"/><br>
+                <!-- Do the same for each button - Give them a name and value property ass done for the first one -->
+            </form>
+            <!-- Display your answer from python here -->
+            <h3>The answer is: <span>{{ answer }}</span> </h3>
+        </center>
+    </body>
+</html>

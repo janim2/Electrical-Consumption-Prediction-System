@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block second %}
+        <form method="POST">
+            <input type="text" name = "theperson"/>
+            <input type="submit" value="Add"/>
+        </form>
+
+        <ul>
+           {% for i in the_p %}
+           <li>{{ i }}</li>
+            {% endfor %}
+        </ul>
+    </body>
+
+</html>
+{% endblock %}

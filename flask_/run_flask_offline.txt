@@ -1,0 +1,37 @@
+
+
+install python3
+verify python installation with 
+$python3 -V
+
+install a virtual environment with 
+$sudo apt install python3-venv
+
+create a diretory in the home folder with any name
+navigate into the directory
+
+create a virtual environment
+$python3 -m venv venv
+
+activate the virtual environment
+$source venv/bin/activate
+the above changeds the $ sign to (venv)
+
+install flask in the virtual environment
+$pip install Flask
+
+create py file in directory save with any name
+
+export the app
+(venv) $export FLASK_APP=hello where hello is the name of the python file
+
+flask run
+(venv) $flask run
+
+run here
+http://127.0.0.1:5000
+
+deactivate virtual environment
+do this afte every session
+
+(venc) $ deactivate

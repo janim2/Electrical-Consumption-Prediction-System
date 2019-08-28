@@ -1,0 +1,14 @@
+runtime: python27
+#version: 1
+api_version: 1
+threadsafe: true
+
+handlers: 
+- url: /.*
+  script: main.app
+
+libraries:
+- name: ssl
+  version: latest
+
+  
