@@ -1,0 +1,220 @@
+<html> 
+    <head>
+        <title>POWER</title>
+         <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript --> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+
+       <style>  
+       body{
+           font-family: Montserrat;
+           /* background: url(../static/images/lightening.jpg);
+           background-repeat:no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;  */
+
+       }     
+          
+        #bee{color:black;
+            font-size:50px;
+            padding: 50px;}
+
+        #the_top{
+            width: 100%;
+            height: 100%;
+            margin-top: -50px;
+            /* background: url(../static/images/A.jpg); */
+            background-repeat:no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover; 
+            
+        }
+
+        #fleece{
+            /* border: .1px solid white; */
+            width: 40%;
+            margin: 50px;
+        }
+        #fleece ul li{list-style-type: none; color: black;
+            font-size:30px;
+            padding: 20px;}
+
+        #fleece ul li:hover{
+            background: black;
+            color: white;
+        }
+
+        h2{
+            padding: 50px;
+        }
+        form{
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        #the_end{
+            width: 40%;
+        }
+
+        #the_end input[type=text]{
+            height: 40px;
+            width: 100%;
+            margin-top: 10px; 
+        }
+
+        #the_end input[type=password]{
+            height: 40px;
+            width: 100%;
+            margin-top: 10px; 
+        }
+
+        #the_end input[type=submit]{
+            height: 40px;
+            width: 100%;
+            font-size: 25px;
+            margin-top: 15px; 
+            background: black;
+            color: white;
+        
+        }
+        #the_end p{
+            text-align: right;
+            margin-right: 50px;
+            font-size: 17px;
+        }
+
+        #the_end p span{
+            color: red;
+        }
+
+        footer{
+            margin-top: 100px;
+        }
+        
+        footer ul{
+            text-align: center;
+        }
+
+        footer ul li{
+            list-style: none;
+            display: inline-block;
+        }
+
+        /* Style all font awesome icons */
+        .fa {
+            padding: 10px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+
+        }
+
+        /* Add a hover effect if you want */
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        /* Set a specific color for each brand */
+
+        /* Facebook */
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        /* Twitter */
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        } 
+
+        /* Facebook */
+        .fa-youtube {
+            background: #3B5998;
+            color: white;
+        }
+
+        /* Twitter */
+        .fa-whatsapp {
+            background: #55ACEE;
+            color: white;
+        } 
+
+        #the_middle{
+            margin-top:-60px;
+        }
+
+        #the_middle p{
+            padding-left: 50px;
+        }
+        </style>
+    </head>
+    <body>
+        <section id="the_top">
+                <h3 id="bee">Power</h3>
+                <nav id="fleece">
+                        <ul>
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#the_middle">ABOUT</a></li>
+                            <li><a href="#the_end">LOGIN</a></li>
+                        </ul>
+                </nav>
+        </section>
+        <section id ="the_middle">
+            <h2>ABOUT</h2>
+            <p>Power is coperation between a life sciences technology project.</br>We are an energy base team with a project of giving statistical data on energy consumption in homes.
+            </br>We&#39;ve been in existence for about a week and provide accurate information in the amount of energy used up in the homes of our customers.</br>
+                Find out how much money you would spend on energy next week. 
+            </p>
+        </section>
+        <section id ="the_end">
+                {% block main %}
+
+                {% endblock %}            
+        </section>
+
+        <footer>
+            <ul>
+                <li><a href="#" class="fa fa-facebook" alt = "facebook"></a></li>
+                <li><a href="#" class="fa fa-twitter" alt = "twitter"></a><li>			
+                <li><a href="#" class="fa fa-youtube" alt = "youtube"></a></li>
+                <li><a href="#" class="fa fa-whatsapp" alt = "whatsapp"></a></li>
+            </ul>
+        </footer>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#config-web-app -->
+
+        <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyB2qq-CKmFNRCze5jIOc5L5ff-E6KGr2dk",
+            authDomain: "eliteweb.firebaseapp.com",
+            databaseURL: "https://eliteweb.firebaseio.com",
+            projectId: "eliteweb",
+            storageBucket: "eliteweb.appspot.com",
+            messagingSenderId: "1009839831904",
+            appId: "1:1009839831904:web:1ead74dd6fc0a78f"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        </script>
+    </body>
+</html>

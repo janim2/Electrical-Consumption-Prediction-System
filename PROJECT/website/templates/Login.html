@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+{% block main %}
+<h2>LOGIN</h2>
+<form method="POST">
+    <input type="text" placeholder="Email" name="email"/></br>
+    <input type="password" placeholder="Password" name="password"/><br>
+    <input type="submit" value="LOGIN" onclick="location:href='dashboard.html'"/>
+</form>
+<p>Not A User? <a href="/register"><span>Register</span></a></p>
+<p>{{ namey }}</p>
+<p>{{ passs }}</p>
+{% endblock %}

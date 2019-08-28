@@ -1,0 +1,2 @@
+file stored here is called read.txt
+file is uploaded by machine learning model and it contains the data to be used in the prediction.

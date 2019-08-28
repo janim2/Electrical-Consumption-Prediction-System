@@ -1,0 +1,2 @@
+tutorial: https://machinelearningmastery.com/how-to-develop-an-autoregression-forecast-model-for-household-electricity-consumption/
+dataset: https://archive.ics.uci.edu/ml/datasets/individual+household+electric+power+consumption
